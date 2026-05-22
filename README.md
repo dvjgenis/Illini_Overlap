@@ -1,6 +1,6 @@
 <div align="center">
 
-# IlliniOverlap
+# [IlliniOverlap](https://illini-overlap.vercel.app/)
 
 **Turn the courses you're already taking into minors and certificates you didn't know you were earning.**
 
