@@ -1,6 +1,8 @@
 <div align="center">
 
-# [IlliniOverlap](https://illini-overlap.vercel.app/)
+<a href="https://illini-overlap.vercel.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=32&duration=3500&pause=1200&color=E84A27&center=true&vCenter=true&width=520&lines=IlliniOverlap;More+credentials.+Less+waste." alt="IlliniOverlap" />
+</a>
 
 **Turn the courses you're already taking into minors and certificates you didn't know you were earning.**
 
@@ -8,9 +10,16 @@
 
 <br />
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-E84A27?style=flat-square&logo=vercel&logoColor=white)](https://illini-overlap.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Vitest](https://img.shields.io/badge/Vitest-tested-6E9F18?style=flat-square&logo=vitest&logoColor=white)](https://vitest.dev/)
+[![UIUC](https://img.shields.io/badge/UIUC-Orange%20%26%20Blue-E84A27?style=flat-square)](https://illinois.edu/)
+
+<br />
+
+[Features](#what-you-get) · [Quick start](#quick-start) · [Architecture](#under-the-hood) · [Contributing](#contributing--development)
 
 </div>
 
@@ -159,9 +168,16 @@ Illini_Overlap/
 
 <div align="center">
 
-**One schedule. More credentials. Less waste.**
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=4000&pause=2000&color=13294B&center=true&vCenter=true&width=480&lines=One+schedule.+More+credentials.+Less+waste." alt="tagline" />
+
+<br />
 
 *IlliniOverlap — see what your transcript is already worth.*
+
+<br />
+
+[![Stars](https://img.shields.io/github/stars/dvjgenis/Illini_Overlap?style=social)](https://github.com/dvjgenis/Illini_Overlap)
+[![Forks](https://img.shields.io/github/forks/dvjgenis/Illini_Overlap?style=social)](https://github.com/dvjgenis/Illini_Overlap/fork)
 
 <br />
 
