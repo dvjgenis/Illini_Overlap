@@ -1,92 +1,90 @@
 <div align="center">
 
-<a href="https://illini-overlap.vercel.app/">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=32&duration=3500&pause=1200&color=E84A27&center=true&vCenter=true&width=520&lines=IlliniOverlap;More+credentials.+Less+waste." alt="IlliniOverlap" />
-</a>
+# IlliniOverlap
 
-**Turn the courses you're already taking into minors and certificates you didn't know you were earning.**
+[![Live Demo](https://img.shields.io/badge/Live-Demo-E84A27?style=for-the-badge&logo=vercel&logoColor=white)](https://illini-overlap.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![UIUC](https://img.shields.io/badge/UIUC-Orange%20%26%20Blue-E84A27?style=for-the-badge)](https://illinois.edu/)
+
+**TL;DR — One sentence:** IlliniOverlap shows Illinois students which minors and certificates they're *already close to finishing* — based on courses they've taken — so they can earn more credentials without wasting semesters.
+
+**Tagline:** More credentials. Less waste.
 
 *Built for Illini, by Illini — University of Illinois Urbana-Champaign*
 
-<br />
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-E84A27?style=flat-square&logo=vercel&logoColor=white)](https://illini-overlap.vercel.app/)
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Vitest](https://img.shields.io/badge/Vitest-tested-6E9F18?style=flat-square&logo=vitest&logoColor=white)](https://vitest.dev/)
-[![UIUC](https://img.shields.io/badge/UIUC-Orange%20%26%20Blue-E84A27?style=flat-square)](https://illinois.edu/)
-
-<br />
-
-[Features](#what-you-get) · [Quick start](#quick-start) · [Architecture](#under-the-hood) · [Contributing](#contributing--development)
+[Try the live app](https://illini-overlap.vercel.app/) · [Why it matters](#why-this-matters) · [Quick start](#quick-start) · [Architecture](#under-the-hood)
 
 </div>
 
 ---
 
+## What this is (in plain English)
+
+Degree audits tell you what you've finished. They **don't** tell you what you're one or two classes away from.
+
+IlliniOverlap is a 4-step wizard:
+
+1. **Profile** — your major(s)  
+2. **Courses** — add manually or upload your advising report  
+3. **Verify** — review the list  
+4. **Results** — completion % for minors, certificates, and Gen Ed progress  
+
+Upload a UIUC Academic Advising Report PDF and it pulls courses for you. Then it scores every program in the catalog against your transcript — matched courses, remaining requirements, eligibility quirks, and confidence signals included.
+
+---
+
 ## Why this matters
 
-Every semester, thousands of Illinois students stack up credit hours that *could* count toward a minor or certificate — but never find out until it's too late. Degree audits show what you've completed. They don't show **what you're one or two classes away from**.
+Every semester, students rack up credit hours that *could* count toward a minor or certificate — and find out too late. Extra terms cost money, time, and momentum. A minor that shares most of your major isn't a vanity add-on; it's leverage on a transcript you're already building.
 
-**IlliniOverlap closes that gap.**
+| Before | With IlliniOverlap |
+|--------|-------------------|
+| Minors/certs buried in PDFs and department pages | One searchable view across the catalog |
+| Guessing whether a class “counts” | Instant completion % + matched / remaining |
+| Spreadsheet math or long advising waits | Minutes in a guided wizard |
+| Gen Ed feels like a disconnected checklist | See which categories your courses already cover |
 
-| The problem today | What IlliniOverlap does |
-|-------------------|-------------------------|
-| Minors and certificates are buried in PDF handbooks and scattered department pages | One searchable dashboard across **every** minor and certificate in the catalog |
-| Students guess whether a class "counts" for something else | Instant **completion %** with matched courses and remaining requirements |
-| Planning means hours with an advisor or spreadsheet | A **4-step wizard** — major, courses, verify, results — in minutes |
-| Transcripts and advising reports are hard to translate into a plan | **Upload your UIUC Academic Advising Report** and pull courses automatically |
-| Gen Ed feels like a checklist with no payoff | See which Gen Ed categories your courses already satisfy |
+It's not a replacement for advising. It's the **discovery layer** students should have *before* the appointment — so the conversation becomes “which of these overlaps should I prioritize?” instead of “what are my options?”
 
-> **The stakes are real.** Extra semesters cost time, money, and momentum. A minor that shares 80% of your major requirements isn't a nice-to-have — it's leverage: stronger transcripts, sharper skill stacks, and credentials earned *without* buying more seat time than you need.
+---
 
-IlliniOverlap isn't a replacement for academic advising. It's the **discovery layer** advisors wish every student had *before* the appointment — so conversations shift from *"What are my options?"* to *"Which of these three overlaps should I prioritize?"*
+## Why it's interesting / significant
+
+- **Solves a real campus pain** with real catalog complexity (elective pools, advanced-hour rules, major exclusions)  
+- **Product + engine** — polished Next.js UI *and* a testable overlap / Gen Ed calculation core  
+- **Advising-report import** — parses the same “courses counting toward total hours” section advisors trust  
+- **Open for Illini builders** — canonical `Programs_Minors` data, Vitest coverage, docs for extension  
 
 ---
 
 ## What you get
 
-```
-   ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌──────────────────────┐
-   │  1. Profile │ ──▶ │  2. Courses │ ──▶ │  3. Verify  │ ──▶ │  4. Results dashboard │
-   │  Your major │     │  Add/upload │     │  Review list│     │  Minors · Certs · Gen Ed│
-   └─────────────┘     └─────────────┘     └─────────────┘     └──────────────────────┘
-```
-
 ### Smart overlap analysis
 
-Enter the courses you've taken, are taking, or plan to take. IlliniOverlap runs them against the full program catalog and surfaces:
+- Completion percentage per minor and certificate  
+- Matched courses (what already counts and why)  
+- Remaining requirements (including elective pools and 300/400 rules)  
+- Eligibility filters (programs blocked by your major are flagged, not silently hidden)  
+- Confidence signals when a result needs a human check  
 
-- **Completion percentage** for each minor and certificate
-- **Matched courses** — what already counts and why
-- **Remaining requirements** — what's left, including elective pools and advanced-hour rules
-- **Eligibility filters** — programs excluded by your major are flagged, not hidden silently
-- **Confidence signals** — so you know when a result is exact vs. needs a human check
+### Flexible course input
 
-### Advising-report import
+PDF advising report · manual search · paste · DOCX · XLSX  
 
-Drop in your **UIUC Academic Advising Report** PDF. The parser targets the *Courses counting toward total hours* section — the same source advisors trust — so you're not re-typing twenty course codes by hand.
+### Gen Ed, tied to your plan
 
-Also supports manual search, paste-from-spreadsheet, DOCX, and XLSX.
-
-### Gen Ed, connected to your plan
-
-Gen Ed requirements aren't an afterthought. The results dashboard shows which **parent categories** your coursework already covers, helping you see how exploratory electives and major requirements double as progress toward breadth — not just toward a credential.
-
-### Built for real catalog complexity
-
-Illinois programs aren't uniform. Some require advisor approval. Some cap overlapping hours. Some split electives into pools with 300/400-level minimums. IlliniOverlap encodes those rules so the numbers you see reflect **how the catalog actually works**, not a simplified guess.
+Results show which Gen Ed parent categories your coursework already satisfies — so breadth progress isn't invisible.
 
 ---
 
 ## Who it's for
 
-| Audience | How IlliniOverlap helps |
-|----------|-------------------------|
-| **Students** | Find high-overlap minors early; avoid redundant credit hours; walk into advising with a shortlist |
-| **Peer mentors & RSOs** | Demo credential stacking in workshops without maintaining a spreadsheet |
-| **Developers at Illinois** | Open, testable overlap engine on canonical `Programs_Minors` data — extend, don't reinvent |
+| Audience | Value |
+|----------|--------|
+| **Students** | Spot high-overlap minors early; walk into advising with a shortlist |
+| **Peer mentors & RSOs** | Demo credential stacking without maintaining a spreadsheet |
+| **Illinois developers** | Extend a tested overlap engine instead of reinventing catalog math |
 
 ---
 
@@ -99,15 +97,13 @@ npm install
 make dev
 ```
 
-Open **[http://localhost:3000](http://localhost:3000)** and walk through the wizard.
-
-### Commands
+Open **[http://localhost:3000](http://localhost:3000)**.
 
 | Command | Description |
 |---------|-------------|
-| `make dev` | Start the development server |
+| `make dev` | Development server |
 | `make build` | Production build |
-| `make start` | Run the production server |
+| `make start` | Run production server |
 | `make lint` | ESLint |
 | `make test` | Vitest unit tests |
 
@@ -134,52 +130,43 @@ flowchart LR
 | Logic | `lib/calculation-engine.ts` · `lib/gen-ed-engine.ts` · `lib/advising-report-parser.ts` |
 | Data | `rawdata/Programs_Minors.xlsx` → served at runtime (CSV fallback supported) |
 
-Deeper docs live in [`docs/context/product-spec.md`](docs/context/product-spec.md) and [`docs/context/system-map.md`](docs/context/system-map.md).
+Deeper docs: [`docs/context/product-spec.md`](docs/context/product-spec.md) · [`docs/context/system-map.md`](docs/context/system-map.md)
 
 ---
 
 ## Project structure
 
-```
+```text
 Illini_Overlap/
-├── app/                  # Next.js App Router pages
-├── components/           # Wizard steps, results UI, design system
-├── lib/                  # Overlap engine, Gen Ed logic, PDF parser, data loaders
-├── context/              # Program + user state (majors, courses)
-├── public/               # Program dataset served to the client
-├── rawdata/              # Source Excel for minors & certificates
-├── tests/                # Unit tests (engines, parsers, loaders)
-├── docs/                 # Product spec, system map, ADRs, progress log
-└── Makefile              # Standard dev commands
+├── app/           # Next.js App Router
+├── components/    # Wizard + results UI
+├── lib/           # Overlap, Gen Ed, PDF parser, loaders
+├── context/       # Program + user state
+├── public/        # Runtime program dataset
+├── rawdata/       # Source Excel
+├── tests/         # Unit tests
+├── docs/          # Spec, system map, ADRs
+└── Makefile
 ```
 
 ---
 
-## Contributing & development
+## Contributing
 
-1. Read [`docs/plan.md`](docs/plan.md) before large changes.
-2. Run `make test` and `make lint` before opening a PR.
-3. Architectural decisions belong in [`docs/adr/`](docs/adr/).
-4. Update [`docs/progress.md`](docs/progress.md) when direction or blockers change.
+1. Read [`docs/plan.md`](docs/plan.md) before large changes  
+2. Run `make test` and `make lint` before a PR  
+3. Record architecture decisions in [`docs/adr/`](docs/adr/)  
+4. Update [`docs/progress.md`](docs/progress.md) when direction changes  
 
-**For AI-assisted development:** pin `@docs/plan.md` and `@docs/progress.md`; use Makefile targets instead of guessing CLI flags.
+**AI-assisted work:** pin `@docs/plan.md` and `@docs/progress.md`; prefer Makefile targets.
 
 ---
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=4000&pause=2000&color=13294B&center=true&vCenter=true&width=480&lines=One+schedule.+More+credentials.+Less+waste." alt="tagline" />
+*See what your transcript is already worth.*
 
-<br />
-
-*IlliniOverlap — see what your transcript is already worth.*
-
-<br />
-
-[![Stars](https://img.shields.io/github/stars/dvjgenis/Illini_Overlap?style=social)](https://github.com/dvjgenis/Illini_Overlap)
-[![Forks](https://img.shields.io/github/forks/dvjgenis/Illini_Overlap?style=social)](https://github.com/dvjgenis/Illini_Overlap/fork)
-
-<br />
+[![Live demo](https://img.shields.io/badge/Open_app-illini--overlap.vercel.app-E84A27?style=for-the-badge)](https://illini-overlap.vercel.app/)
 
 University of Illinois Urbana-Champaign
 
