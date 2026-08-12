@@ -1,17 +1,21 @@
 <div align="center">
 
-# IlliniOverlap
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-E84A27?style=for-the-badge&logo=vercel&logoColor=white)](https://illini-overlap.vercel.app/)
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![UIUC](https://img.shields.io/badge/UIUC-Orange%20%26%20Blue-E84A27?style=for-the-badge)](https://illinois.edu/)
+<a href="https://illini-overlap.vercel.app/">
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=32&duration=3500&pause=1200&color=E84A27&center=true&vCenter=true&width=520&lines=IlliniOverlap;More+credentials.+Less+waste." alt="IlliniOverlap" />
+</a>
 
 **TL;DR — One sentence:** IlliniOverlap shows Illinois students which minors and certificates they're *already close to finishing* — based on courses they've taken — so they can earn more credentials without wasting semesters.
 
-**Tagline:** More credentials. Less waste.
-
 *Built for Illini, by Illini — University of Illinois Urbana-Champaign*
+
+<br />
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-E84A27?style=flat-square&logo=vercel&logoColor=white)](https://illini-overlap.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![UIUC](https://img.shields.io/badge/UIUC-Orange%20%26%20Blue-E84A27?style=flat-square)](https://illinois.edu/)
+
+<br />
 
 [Try the live app](https://illini-overlap.vercel.app/) · [Why it matters](#why-this-matters) · [Quick start](#quick-start) · [Architecture](#under-the-hood)
 
@@ -164,7 +168,13 @@ Illini_Overlap/
 
 <div align="center">
 
-*See what your transcript is already worth.*
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=4000&pause=2000&color=13294B&center=true&vCenter=true&width=480&lines=One+schedule.+More+credentials.+Less+waste." alt="tagline" />
+
+<br />
+
+*IlliniOverlap — see what a transcript is already worth.*
+
+<br />
 
 [![Live demo](https://img.shields.io/badge/Open_app-illini--overlap.vercel.app-E84A27?style=for-the-badge)](https://illini-overlap.vercel.app/)
 
